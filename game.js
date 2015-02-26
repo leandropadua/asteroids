@@ -394,7 +394,7 @@ Ship = function () {
 
   this.postMove = this.wrapPostMove;
 
-  this.collidesWith = ["asteroid", "bigalien", "alienbullet"];
+  this.collidesWith = ["bigalien", "alienbullet"];
 
   this.preMove = function (delta) {
     if (KEY_STATUS.left) {
@@ -666,7 +666,7 @@ Asteroid = function () {
   this.scale = 6;
   this.postMove = this.wrapPostMove;
 
-  this.collidesWith = ["ship", "bullet", "bigalien", "alienbullet"];
+  this.collidesWith = ["bullet", "bigalien", "alienbullet"];
 
   this.collision = function (other) {
     SFX.explosion();
